@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+html, body, [class*="css"] {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #0a0a0a;
+  color: #d4d4d4;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+  background-color: #111111;
+  border-right: 1px solid #222;
+}
+section[data-testid="stSidebar"] * { color: #aaaaaa !important; }
+section[data-testid="stSidebar"] .stMultiSelect span,
+section[data-testid="stSidebar"] label {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 0.78rem !important;
+}
+
+/* Multiselect tags */
+section[data-testid="stSidebar"] span[data-baseweb="tag"] {
+  background-color: #2a2a2a !important;
+  border: 1px solid #444 !important;
+}
+section[data-testid="stSidebar"] span[data-baseweb="tag"] span {
+  color: #cccccc !important;
+}
+section[data-testid="stSidebar"] span[data-baseweb="tag"] svg {
+  fill: #888 !important;
+}
+
+/* Metric cards */
+[data-testid="metric-container"] {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 1rem 1.2rem;
+}
+[data-testid="metric-container"] label {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 0.72rem !important;
+  color: #666 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 1.6rem !important;
+  color: #e8e8e8 !important;
+}
+[data-testid="metric-container"] [data-testid="stMetricDelta"] {
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 0.78rem !important;
+}
+
+/* Title */
+.dash-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #e8e8e8;
+  letter-spacing: 0.02em;
+}
+.dash-subtitle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+/* Remove Streamlit branding */
+#MainMenu, footer, header { visibility: hidden; }
